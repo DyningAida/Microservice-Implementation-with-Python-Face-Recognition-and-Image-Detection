@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cek Gambar</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css')}}">
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron text-center jumbotron-fluid mt-5">
+        <div class="col-sm-8 mx-auto">
+            <form action="/cek_gambar" method="POST" enctype="multipart/form-data">
+              <div class="form-group text-center">
+                <label for="image">Choose an image</label>
+                <input type="file" class="form-control-file" id="image" name="image">
+              </div>
+              <button type="submit" id="submit" class="btn btn-dark">Submit</button>
+            </form>
+            <p></p>
+              <a class="btn btn-dark" href="/" role="button">Back to home</a>
+          </div>
+  </div>
+  </div>
+</body>
+</html>

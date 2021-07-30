@@ -1,0 +1,6 @@
+pymysql
+pillow
+flask
+opencv
+config
+authlib
